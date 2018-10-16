@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+    </style>
+</head>
+<body>
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>Would you like to continue?</p>
+            <button type="submit" value="no">No</button>
+            <button type="submit" value="yes">Yes</button>
+        </form>
+    </dialog>
+    <script>
+        let dialog = document.querySelector('dialog');
+        dialog.showModal();
+        dialog.addEventListener('close', function (event) {
+            console.log(dialog.returnValue)
+            if (dialog.returnValue === 'yes') { /* ... */ }
+        });
+    </script>
+</body>
+</html>

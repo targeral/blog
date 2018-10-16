@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>example</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 5px 20px;
+        }
+
+        li {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indeterminate checkeboxs</h1>
+
+    <ul>
+        <li>
+            <input type="checkbox" name="tail" id="tail">
+            <label for="tail">Tall Things</label>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="tail-1" id="tail-1">
+                    <label for="tail-1">Buildings</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="tail-2" id="tail-2">
+                    <label for="tail-2">Giants</label>
+
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="tail-2-1" id="tail-2-1">
+                            <label for="tail-2-1">Andre</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="tail-2-2">
+                            <label for="tail-2-2">Paul Bunyan</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" name="tail-3" id="tail-3">
+                    <label for="tail-3">Two sandwiches</label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" name="short" id="short">
+            <label for="short">Short Thing</label>
+
+            <ul>
+                <li>
+                    <input type="checkbox" name="short-1" id="short-1">
+                    <label for="short-1">Smurfs</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="short-2" id="short-2">
+                    <label for="short-2">Mushrooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="short-3" id="short-3">
+                    <label for="short-3">One Sandwich</label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./demo.js"></script>
+</body>
+</html>
