@@ -1,0 +1,1 @@
+http://thecodebarbarian.com/convert-a-string-to-a-number-in-javascript.html
